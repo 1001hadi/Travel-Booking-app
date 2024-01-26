@@ -40,7 +40,7 @@
 }
 
 .headerBtn {
-  background-color: #dda15e;
+  background-color: #606c38;
   color: #fff;
   font-weight: 600;
   border: none;
@@ -87,6 +87,7 @@
 .date {
   position: absolute;
   top: 50px;
+  z-index: 2;
 }
 
 .options {
@@ -96,6 +97,7 @@
   color: #555;
   border-radius: 7px;
   box-shadow: 0 0 10px -5px rgba(0, 0, 0, 0.5);
+  z-index: 2;
 }
 
 .optionItem {
