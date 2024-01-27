@@ -35,6 +35,12 @@
   padding: 7px;
 }
 
+/* .headerListItem:hover {
+  border: 2px solid #fff;
+  border-radius: 20px;
+  padding: 7px;
+} */
+
 .headerDesc {
   margin: 20px 0px;
 }

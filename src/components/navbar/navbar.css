@@ -26,4 +26,9 @@
   border-radius: 20px;
   padding: 7px 12px;
   color: #bc6c25;
+  cursor: pointer;
+}
+
+.navButton:hover {
+  background-color: #e8e4c9;
 }
