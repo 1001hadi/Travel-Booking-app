@@ -15,7 +15,9 @@
 }
 
 .logo {
-  font-weight: 700;
+  font-size: 1.5rem;
+  color: #444d28;
+  font-weight: 900;
 }
 
 .navButton {

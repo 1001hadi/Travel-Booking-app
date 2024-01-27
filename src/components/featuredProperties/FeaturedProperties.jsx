@@ -33,7 +33,7 @@ function FeaturedProperties() {
       </div>
       <div className="fpItem">
         <img
-          src="https://cf.bstatic.com/static/img/theme-index/carousel_320x240/bg_resorts/6f87c6143fbd51a0bb5d15ca3b9cf84211ab0884.jpg"
+          src="https://cf.bstatic.com/xdata/images/hotel/square600/449921333.webp?k=14ac3f56490884bb97470a575b8ced2aa7ccd6ff5e1e300257d40a79ead39f61&amp;o="
           alt=""
           className="fpImg"
         />
@@ -47,7 +47,7 @@ function FeaturedProperties() {
       </div>
       <div className="fpItem">
         <img
-          src="https://cf.bstatic.com/xdata/images/xphoto/square300/57584488.webp?k=bf724e4e9b9b75480bbe7fc675460a089ba6414fe4693b83ea3fdd8e938832a6&o="
+          src="https://cf.bstatic.com/xdata/images/hotel/square600/293966328.webp?k=93b9eb4bb687915186b42249f20993f9dcd7cbc37682fa4264bd2cd0db35afe2&amp;o="
           alt=""
           className="fpImg"
         />

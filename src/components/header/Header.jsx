@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBed,
@@ -17,6 +18,7 @@ import "react-date-range/dist/theme/default.css";
 import { format } from "date-fns";
 
 function Header({ type }) {
+  const [destination, setDestination] = useState("");
   const [openDate, setOpenDate] = useState(false);
   const [date, setDate] = useState([
     {
@@ -27,6 +29,7 @@ function Header({ type }) {
   ]);
   const [openOptions, setOpenOptions] = useState(false);
   const [options, setOptions] = useState({ adult: 1, children: 0, room: 1 });
+  const navigate = useNavigate();
 
   const handleCounter = (name, operator) => {
     setOptions((prev) => {
@@ -35,6 +38,10 @@ function Header({ type }) {
         [name]: operator === "i" ? options[name] + 1 : options[name] - 1,
       };
     });
+  };
+
+  const handleSearch = () => {
+    navigate("/hotels", { state: { destination, date, options } });
   };
 
   return (
@@ -68,10 +75,10 @@ function Header({ type }) {
         </div>
         {type !== "list" && (
           <>
-            <h1 className="headerTitle">A life of discounts? It's Genius</h1>
+            <h1 className="headerTitle">Find deals for any season</h1>
             <p className="headerDesc">
               Get rewarded for your travel - unlock instant saving of %20 or
-              more with a free Jaf Booking acount.
+              more with a free JAF Booking acount.
             </p>
             <button className="headerBtn">Sign in / Register</button>
             <div className="headerSearch">
@@ -81,6 +88,7 @@ function Header({ type }) {
                   type="text"
                   placeholder="Enter Destination"
                   className="headerSearchInput"
+                  onChange={(e) => setDestination(e.target.value)}
                 />
               </div>
               <div className="headerSearchItem">
@@ -99,6 +107,7 @@ function Header({ type }) {
                     moveRangeOnFirstSelection={false}
                     ranges={date}
                     className="date"
+                    minDate={new Date()}
                   />
                 )}
               </div>
@@ -177,7 +186,9 @@ function Header({ type }) {
                 )}
               </div>
               <div className="headerSearchItem">
-                <button className="headerBtn">Search</button>
+                <button className="headerBtn" onClick={handleSearch}>
+                  Search
+                </button>
               </div>
             </div>
           </>
