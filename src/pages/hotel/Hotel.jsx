@@ -83,16 +83,16 @@ const Hotel = () => {
         )}
         <div className="hotelWrapper">
           <button className="bookNow">Reserve or Book Now!</button>
-          <h1 className="hotelTitle">Tower Street Apartments</h1>
+          <h1 className="hotelTitle">Avalon Apartment & Studio</h1>
           <div className="hotelAddress">
             <FontAwesomeIcon icon={faLocationDot} />
-            <span>Elton St 125 New york</span>
+            <span>555 Main St, Denver</span>
           </div>
           <span className="hotelDistance">
-            Excellent location – 500m from center
+            Excellent location – 950ft from city center
           </span>
           <span className="hotelPriceHighlight">
-            Book a stay over $114 at this property and get a free airport taxi
+            Book a stay over $270 at this property and get a free airport taxi
           </span>
           <div className="hotelImages">
             {photos.map((photo, i) => (
@@ -108,7 +108,9 @@ const Hotel = () => {
           </div>
           <div className="hotelDetails">
             <div className="hotelDetailsTexts">
-              <h1 className="hotelTitle">Stay in the heart of City</h1>
+              <h1 className="hotelTitle">
+                Stay in the heart of mile high City
+              </h1>
               <p className="hotelDesc">
                 Located a 5-minute walk from 16th st mall, Avalon Apartment &
                 Studio has accommodations with air conditioning and free WiFi.
@@ -124,11 +126,11 @@ const Hotel = () => {
               </p>
             </div>
             <div className="hotelDetailsPrice">
-              <h1>Perfect for a 5-night stay!</h1>
               <span>
                 Located in the heart of Mile high City, this property has an
                 excellent location score of 9.5!
               </span>
+              <h1>Your Cost for 5-night stay!</h1>
               <h2>
                 <b>$1350</b> (5 nights)
               </h2>
