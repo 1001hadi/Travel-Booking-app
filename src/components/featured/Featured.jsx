@@ -5,13 +5,13 @@ function Featured() {
     <div className="featured">
       <div className="featuredItem">
         <img
-          src="https://cf.bstatic.com/xdata/images/city/max500/957801.webp?k=a969e39bcd40cdcc21786ba92826063e3cb09bf307bcfeac2aa392b838e9b7a5&o="
-          alt="outdore"
+          src="https://cf.bstatic.com/xdata/images/city/max500/689422.webp?k=2595c93e7e067b9ba95f90713f80ba6e5fa88a66e6e55600bd27a5128808fdf2&o="
+          alt="lake tahoe"
           className="featuredImg"
         />
         <div className="featuredTitle">
-          <h1>Riley</h1>
-          <h3>123 properties</h3>
+          <h1>Lake Tahoe</h1>
+          <h3>447 properties</h3>
         </div>
       </div>
 
@@ -26,15 +26,16 @@ function Featured() {
           <h3>363 properties</h3>
         </div>
       </div>
+
       <div className="featuredItem">
         <img
-          src="https://cf.bstatic.com/xdata/images/city/max500/689422.webp?k=2595c93e7e067b9ba95f90713f80ba6e5fa88a66e6e55600bd27a5128808fdf2&o="
-          alt="lake tahoe"
+          src="https://cf.bstatic.com/xdata/images/city/600x600/977409.jpg?k=82c14f9e6cea94829ee0528a3aa4324111d3482e9f095194500746fa7ca2769e&amp;o="
+          alt="outdore"
           className="featuredImg"
         />
         <div className="featuredTitle">
-          <h1>Lake Tahoe</h1>
-          <h3>447 properties</h3>
+          <h1>Las Vegas</h1>
+          <h3>146 properties</h3>
         </div>
       </div>
     </div>
