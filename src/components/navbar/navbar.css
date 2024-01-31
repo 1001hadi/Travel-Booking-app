@@ -19,6 +19,10 @@
   color: #444d28;
   font-weight: 900;
 }
+.home {
+  color: inherit;
+  text-decoration: none;
+}
 
 .navButton {
   margin-left: 7px;
